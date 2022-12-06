@@ -1,0 +1,27 @@
+form {
+    width: 500px;
+    padding: 20px 30px 30px 30px;
+    background-color: var(--color-page);
+}
+
+a {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #737475;
+}
+
+a:hover {
+    color: #3f51b5;
+    font-weight: 600;
+}
+
+.input-content {
+    margin-bottom: 10px;
+}
+
+mat-progress-bar {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

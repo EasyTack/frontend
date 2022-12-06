@@ -1,0 +1,71 @@
+<div class="package">
+    <h1 class="title">Encomendas</h1>
+
+    <div class="options card-white">
+        <div class="options-btn">
+            <button mat-raised-button [matMenuTriggerFor]="menuEncomenda" class="btn-menu highlight-button-white">
+                <mat-icon class="btn-icon">add</mat-icon>
+                Encomendas
+            </button>
+            <mat-menu #menuEncomenda="matMenu">
+                <button mat-menu-item (click)="dialogAdicionarEncomenda()">
+                    <mat-icon>add</mat-icon>
+                    Adicionar
+                </button>
+                <button mat-menu-item (click)="removerEncomenda()">
+                    <mat-icon>delete_outline</mat-icon>
+                    Remover
+                </button>
+            </mat-menu>
+
+
+            <button mat-raised-button [matMenuTriggerFor]="menuEtiqueta" class="btn-menu highlight-button-white">
+                <mat-icon class="btn-icon">style</mat-icon>
+                Etiquetas
+            </button>
+            <mat-menu #menuEtiqueta="matMenu">
+                <button mat-menu-item (click)="dialogCriarEtiqueta()"><mat-icon>bookmark</mat-icon>Criar</button>
+                <button mat-menu-item (click)="dialogEditarEtiqueta()"><mat-icon>bookmark_border</mat-icon>Editar</button>
+                <button mat-menu-item (click)="dialogAdicionarEtiqueta()"><mat-icon>book</mat-icon>Adicionar</button>
+                <button mat-menu-item (click)="removerEtiqueta()"><mat-icon>delete_outline</mat-icon>Remover</button>
+            </mat-menu>
+
+            <button mat-raised-button [matMenuTriggerFor]="menuFiltro" class="btn-menu highlight-button-white">
+                <mat-icon class="btn-icon">find_in_page</mat-icon>
+                Filtros
+            </button>
+            <mat-menu #menuFiltro="matMenu">
+                <button mat-menu-item (click)="dialogFiltrarCodigo()"><mat-icon>calendar_view_day</mat-icon>Código</button>
+                <button mat-menu-item (click)="dialogFiltrarOperadorLogistico()"><mat-icon>local_shipping</mat-icon>Transportadora</button>
+                <button mat-menu-item (click)="dialogFiltrarOrigem()"><mat-icon>flight_takeoff</mat-icon>Origem</button>
+                <button mat-menu-item (click)="dialogFiltrarDestino()"><mat-icon>flight_land</mat-icon>Destino</button>
+                <button mat-menu-item (click)="dialogFiltrarEtiqueta()"><mat-icon>local_offer</mat-icon>Etiqueta</button>
+                <button mat-menu-item (click)="dialogFiltrarStatus()"><mat-icon></mat-icon>Status</button>
+                <button mat-menu-item (click)="dialogFiltrarPeriodoPostagem()"><mat-icon>calendar_today</mat-icon>Postagem</button>
+                <button mat-menu-item (click)="dialogFiltrarPeriodoEntrega()"><mat-icon>calendar_today</mat-icon>Entrega</button>
+            </mat-menu>
+        </div>
+
+        <div class="options-filter">
+            <mat-form-field class="filter-tipes">
+                <mat-label>Filtros</mat-label>
+                <mat-chip-list>
+                    <mat-chip *ngIf="filtros.length == 0">
+                        Todas as Encomendas
+                        <button matChipRemove><mat-icon>cancel</mat-icon></button>
+                    </mat-chip>
+
+                    <mat-chip *ngFor="let f of filtros; index as i" (removed)="removerFiltro(f, i)">
+                        {{f.getString()}}
+                        <button matChipRemove><mat-icon>cancel</mat-icon></button>
+                        </mat-chip>
+                </mat-chip-list>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="content-table card-white">
+        <!--<app-tabela-encomendas [pacotes$]="pacotes$" (eventListSelected)="atualizarObjetosSelecionados($event)"></app-tabela-encomendas>-->
+        <app-tabela-encomendas [listaPacotes$]="listaPacotes$"></app-tabela-encomendas>
+    </div>
+</div>

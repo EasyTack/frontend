@@ -1,0 +1,66 @@
+<div class="content-alight-center">
+
+    <div class="menu-inicial card-white">
+		<h1 class="title">Easy Track</h1>
+		<h3 class="title">Rastreamento Correios, Sequoia, Shopee, Kabum, fácil, rápico e em um unico local!</h3>
+		
+        <form [formGroup]="formPesquisa" *ngIf="!pesquisa" class="home-form-busca">
+            <div class="home-form-item">
+				<form-select-operador-logistico
+					[label]="'Transportadora'"
+					[custonFormControlName]="'buscaOperadorLogistico'"
+					[operadoresLogisticos$]="operadoresLogisticos$"
+				></form-select-operador-logistico>
+			</div>
+
+            <div class="home-form-item">
+				<form-input-text
+					[label]="'Código da encomenda'"
+					[custonFormControlName]="'buscaCodigo'"
+					[placeholder]="'AA123456785BR'"
+				></form-input-text>
+			</div>
+
+			<div class="home-form-button">
+				<button mat-raised-button (click)="pesquisar()" class="highlight-button-white">
+					<mat-icon>search</mat-icon>
+					Buscar
+				</button>
+			</div>
+        </form>
+
+		<div *ngIf="pesquisa" class="home-registro-movimentacoes">
+			<app-movimentacao-pacote [registroMovimentacoes$]="registroMovimentacoes$"></app-movimentacao-pacote>
+		</div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--<h1 class="title">Easy Track</h1>
+    <h3 class="title">Rastreamento Correios, Sequoia, Shopee, Kabum, fácil, rápico e em um unico local!</h3>
+
+    <div style="display: flex; justify-content: center;">
+    <div style="background-color: white; border-radius:10px"> 
+
+    <mat-form-field appearance="outline" class="example-form-field" style="padding: 10px 10px 0px 10px;">
+        <mat-label>Digite o código de rastreio</mat-label>
+        <input matInput type="search" [(ngModel)]="codigo">
+        <button *ngIf="codigo" matSuffix mat-icon-button aria-label="Clear" (click)="codigo=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button mat-stroked-button style="margin: 0px 10px 0px 0px;" (click)="verificaCodigoCorreios(codigo)"><mat-icon>search</mat-icon> Pesquisar</button>
+    </div>
+
+    <div class="registro-movimentacao">
+      <app-movimentacao-pacote [registroMovimentacoes$]="registroMovimentacoes$"></app-movimentacao-pacote>
+    </div>
+</div>-->
+</div>

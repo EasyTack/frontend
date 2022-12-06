@@ -1,0 +1,69 @@
+h1 {
+    color: var(--color-page);
+    font-weight: 500;
+}
+
+.package-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    padding: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.package {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.options{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    background-color: var(--color-page);
+}
+
+.options-btn {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-filter {
+    margin-top: 10px;
+}
+
+.btn-menu {
+    min-width: 120px;
+}
+
+.btn-icon {
+    margin-right: 5px;
+}
+
+.filter-tipes {
+    width: 100%;
+}
+
+.content-table {
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: var(--color-page);
+    height: calc(100% - 170px);
+    overflow: scroll;
+}
+
+.btn-add {
+    margin-bottom: 5px 10px;
+}

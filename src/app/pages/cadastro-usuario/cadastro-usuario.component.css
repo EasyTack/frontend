@@ -1,0 +1,27 @@
+form {
+    width: 600px;
+    padding: 20px 30px 30px 30px;
+    background-color: var(--color-page);
+}
+
+a {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #737475;
+}
+
+a:hover {
+    color: #3f51b5;
+    font-weight: 600;
+}
+
+.matbar {
+    width: 600px;
+    height: 80px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-page);
+}

@@ -1,0 +1,9 @@
+<ul class="milestones milestones-bordered-bottom">
+    <li *ngFor="let rm of registroMovimentacoes">
+        <i class="glyphicon milestones-ajust"><mat-icon>local_shipping</mat-icon></i>
+        <div class="group-moviment">
+            <h4><b>{{rm.data | date:'dd/MM/yyyy'}}</b></h4>
+            <h4>Local: <b>{{rm.local}}</b></h4>
+        </div>
+    </li>
+</ul>

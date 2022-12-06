@@ -1,0 +1,40 @@
+<div class="all-page">
+    <mat-toolbar color="primary" *ngIf="!usuarioLogado">
+        <a mat-icon-button routerLink="home"><mat-icon class="icon-home">home</mat-icon> Home</a>
+        <a mat-icon-button routerLink="transp">Transportadoras</a>
+
+        <div class="flex-spacer"></div>
+
+        <div  class="actions">
+            <button mat-icon-button [routerLink]="['login']" class="button-usuario">
+                <mat-icon>account_circle</mat-icon> 
+                Login
+            </button>
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar *ngIf="usuarioLogado" color="primary">
+        <a mat-icon-button routerLink=""><mat-icon class="icon-home">home</mat-icon> Home</a>
+        <a mat-icon-button routerLink="transp">Transportadoras</a>
+        <a mat-icon-button routerLink="encomendas">Encomendas</a>
+
+        <div class="flex-spacer"></div>
+
+        <div  class="actions">
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="button-usuario">
+                <mat-icon>account_circle</mat-icon> 
+                {{usuarioName}}
+            </button>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="changeRegistration()"><mat-icon>person</mat-icon><span>Alterar cadastro</span></button>
+                <button mat-menu-item (click)="openConfig()"><mat-icon>settings</mat-icon> Configuração</button>
+                <button mat-menu-item (click)="logout()"><mat-icon>exit_to_app</mat-icon><span>Sair</span></button>
+            </mat-menu>
+        </div>
+    </mat-toolbar>
+
+    <div class="content-page">
+        <router-outlet></router-outlet>
+    </div>
+</div>

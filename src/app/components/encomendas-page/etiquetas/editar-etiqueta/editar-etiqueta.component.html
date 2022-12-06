@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Editar Etiqueta</h1>
+
+<div mat-dialog-content class="content-page">
+    <form [formGroup]="formEditarEtiqueta" class="form-center">
+
+        <form-select-etiqueta *ngIf="selecionandoEtiqueta"
+            [label] = "'Etiqueta'"
+            [etiquetas$]="etiquetas$"
+            [custonFormControlName]="'etiqueta'"
+        ></form-select-etiqueta>
+
+        <div *ngIf="!selecionandoEtiqueta" class="form-center form-editar-etiqueta">
+            <form-input-text
+                [label]="'Nome'"
+                [custonFormControlName]="'nome'"
+                [placeholder] = "'Natal'"
+            ></form-input-text>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Cor</mat-label>
+                <input matInput formControlName="cor" type="color" placeholder="AA123456785BR">
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div>
+        <button *ngIf="!selecionandoEtiqueta" mat-raised-button [mat-dialog-close]="formEditarEtiqueta.value" class="btn-dialog-position-ok btn-filter highlight-button-white">Salvar</button>
+        <button *ngIf="selecionandoEtiqueta" (click)="selecionarEtiqueta()" mat-raised-button class="btn-dialog-position-ok btn-filter highlight-button-white">Selecionar</button>
+
+        <button mat-raised-button mat-dialog-close class="btn-dialog-position-cancel btn-filter highlight-button-white">Cancelar</button>
+    </div>
+</div>

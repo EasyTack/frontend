@@ -1,0 +1,20 @@
+<ng-container [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>{{label}}</mat-label>
+        <mat-select formControlName="{{custonFormControlName}}" [(value)]="etiquetaSelecionada">
+            <mat-select-trigger>
+                <div class="cor-content">
+                    <mat-icon [ngStyle]="{'color': etiquetaSelecionada?.cor}">local_offer</mat-icon>
+                    <h4>{{etiquetaSelecionada?.nome}}</h4>
+                </div>
+            </mat-select-trigger>
+            <mat-option [value]="">Nenhuma</mat-option>
+            <mat-option *ngFor="let e of etiquetas$ | async" [value]="e">
+                <div class="cor-content">
+                    <mat-icon [ngStyle]="{'color': e.cor}">local_offer</mat-icon>
+                    <h4>{{e.nome}}</h4>
+                </div>
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</ng-container>

@@ -1,0 +1,11 @@
+<ng-container [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>{{label}}</mat-label>
+        <mat-select formControlName="{{custonFormControlName}}">
+            <mat-option [value]="">Nenhuma</mat-option>
+            <mat-option *ngFor="let e of operadoresLogisticos$ | async" [value]="e">
+                {{e.nome}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</ng-container>

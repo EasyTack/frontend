@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ababab;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 6px;
+}

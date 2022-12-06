@@ -1,0 +1,47 @@
+.all-page {
+    height: 100%;
+}
+
+.content-page {
+    height: calc(100% - 64px);
+    background-image: var(--color-background)
+}
+
+a {
+    margin: 0 2px;
+    min-width: 130px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #36438d;
+}
+
+.icon-home {
+    margin-right: 6px;
+}
+.flex-spacer {
+    flex-grow: 1;
+}
+
+.actions {
+    background-color: #36438d9d;
+    border-radius: 10px;
+}
+
+.actions:hover {
+    background-color: #4153b8;
+    box-shadow: 0px 0px 15px -3px #000000;
+}
+
+.actions button {
+    margin: 0px 5px;
+}
+
+.button-usuario {
+    min-width: 100px;
+}
+
+.button-usuario mat-icon{
+    margin: 0px 5px;
+}

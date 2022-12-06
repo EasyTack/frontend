@@ -1,0 +1,65 @@
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --color-background: linear-gradient(to right top, #fdfdfd, #dbd5f9, #b7aff4, #9189ee, #6565e7);
+    --color-page: white;
+    /*--color-page: rgb(234, 235, 238);*/
+}
+
+.title {
+    text-align: center;
+}
+
+/* Centralizar div no meio da meio da página */
+.content-alight-center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Borda na div */
+.card-white {
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 1px #737475;
+}
+
+.page-bottom-shadow-white {
+    border-radius: 3px 3px 10px 10px;
+    box-shadow: 0px 0px 18px 1px #737475;
+}
+
+/* Elementos dispostos um abaixo do outro dentro do form */
+.form-center {
+    display: grid;
+    margin: auto;
+}
+
+/* Botão */
+.highlight-button-blue:hover {
+    box-shadow: 0px 0px 8px 0px #36438d;
+    transition: 100ms;
+}
+
+.highlight-button-white:hover {
+    box-shadow: 0px 0px 8px 0px #7f8181;
+    transition: 100ms;
+}
+
+/* Botões dialod */
+.btn-dialog-position-ok, .btn-dialog-position-cancel {
+    margin-bottom: 5px !important;
+    min-width: 100px !important;
+}
+
+/* Botão na direita */
+.btn-dialog-position-ok {
+    float: right;
+}
+
+/* Botão na esquerda */
+.btn-dialog-position-cancel {
+    float: left;
+}

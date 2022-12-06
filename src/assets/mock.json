@@ -1,0 +1,249 @@
+
+{
+    "pacote":{
+        "codigoOperadorLogistica": "QM477512381BR",
+        "dataPostagem":"04/11/2022",
+        "dataEntrega": "11/11/2022",
+        "localOrigem": "Nova Iguacu / RJ",
+        "localDestino": "Serra / ES",
+        "status": "Objeto entregue ao destinatário",
+        "etiquetas": [{"nome": "Natal", "cor": "red", "id":"1"}, {"nome": "Eletronico", "cor": "blue", "id":"2"}],
+        "operadorLogistico":{"nome": "Correios", "id":"1"},
+        "registroMovimentacoes": [
+        {
+            "data": "11/11/2022",
+            "hora": "16:35",
+            "local": "Serra / ES",
+            "status": "Objeto entregue ao destinatário",
+            "subStatus": [
+            "Local: Agência dos Correios - Serra / ES"
+            ]
+        },
+        {
+            "data": "10/11/2022",
+            "hora": "14:53",
+            "local": "Serra / ES",
+            "status": "Objeto aguardando retirada no endereço indicado",
+            "subStatus": [
+            "Local: Agência dos Correios - Serra / ES",
+            "Para retirá-lo, é preciso informar o código do objeto e apresentar documentação que comprove ser o destinatário ou pessoa por ele oficialmente autorizada.",
+            "Agência dos Correios: Serra / ES"
+            ]
+        },
+        {
+            "data": "10/11/2022",
+            "hora": "09:43",
+            "local": "Serra / ES",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Distribuição - Serra / ES",
+            "Destino: Agência dos Correios - Serra / ES"
+            ]
+        },
+        {
+            "data": "09/11/2022",
+            "hora": "13:25",
+            "local": "Serra / ES",
+            "status": "Área com distribuição sujeita a prazo diferenciado",
+            "subStatus": [
+            "Local: Unidade de Distribuição - Serra / ES"
+            ]
+        },
+        {
+            "data": "09/11/2022",
+            "hora": "08:40",
+            "local": "Serra / ES",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Tratamento - Serra / ES",
+            "Destino: Unidade de Distribuição - Serra / ES"
+            ]
+        },
+        {
+            "data": "07/11/2022",
+            "hora": "16:01",
+            "local": "Rio De Janeiro / RJ",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Tratamento - Rio De Janeiro / RJ",
+            "Destino: Unidade de Tratamento - Serra / ES"
+            ]
+        },
+        {
+            "data": "07/11/2022",
+            "hora": "09:51",
+            "local": "Nova Iguacu / RJ",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Agência dos Correios - Nova Iguacu / RJ",
+            "Destino: Unidade de Tratamento - Rio De Janeiro / RJ"
+            ]
+        },
+        {
+            "data": "04/11/2022",
+            "hora": "20:55",
+            "local": "Nova Iguacu / RJ",
+            "status": "Objeto postado após o horário limite da unidade",
+            "subStatus": [
+            "Local: Agência dos Correios - Nova Iguacu / RJ"
+            ]
+        }]},
+    "pacoteList":[{
+        "codigoOperadorLogistica": "QM477512381BR",
+        "dataPostagem":"04/11/2022",
+        "dataEntrega": "11/11/2022",
+        "localOrigem": "Nova Iguacu / RJ",
+        "localDestino": "Serra / ES",
+        "status": "Objeto entregue ao destinatário",
+        "etiquetas": [{"nome": "Natal", "cor": "red", "id":"1"}, {"nome": "Eletronico", "cor": "blue","id":"2"}],
+        "operadorLogistico":{"nome": "Correios", "id":"1"},
+        "registroMovimentacoes": [
+        {
+            "data": "11/11/2022",
+            "hora": "16:35",
+            "local": "Serra / ES",
+            "status": "Objeto entregue ao destinatário",
+            "subStatus": [
+            "Local: Agência dos Correios - Serra / ES"
+            ]
+        },
+        {
+            "data": "10/11/2022",
+            "hora": "14:53",
+            "local": "Serra / ES",
+            "status": "Objeto aguardando retirada no endereço indicado",
+            "subStatus": [
+            "Local: Agência dos Correios - Serra / ES",
+            "Para retirá-lo, é preciso informar o código do objeto e apresentar documentação que comprove ser o destinatário ou pessoa por ele oficialmente autorizada.",
+            "Agência dos Correios: Serra / ES"
+            ]
+        },
+        {
+            "data": "10/11/2022",
+            "hora": "09:43",
+            "local": "Serra / ES",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Distribuição - Serra / ES",
+            "Destino: Agência dos Correios - Serra / ES"
+            ]
+        },
+        {
+            "data": "09/11/2022",
+            "hora": "13:25",
+            "local": "Serra / ES",
+            "status": "Área com distribuição sujeita a prazo diferenciado",
+            "subStatus": [
+            "Local: Unidade de Distribuição - Serra / ES"
+            ]
+        },
+        {
+            "data": "09/11/2022",
+            "hora": "08:40",
+            "local": "Serra / ES",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Tratamento - Serra / ES",
+            "Destino: Unidade de Distribuição - Serra / ES"
+            ]
+        },
+        {
+            "data": "07/11/2022",
+            "hora": "16:01",
+            "local": "Rio De Janeiro / RJ",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Unidade de Tratamento - Rio De Janeiro / RJ",
+            "Destino: Unidade de Tratamento - Serra / ES"
+            ]
+        },
+        {
+            "data": "07/11/2022",
+            "hora": "09:51",
+            "local": "Nova Iguacu / RJ",
+            "status": "Objeto encaminhado",
+            "subStatus": [
+            "Origem: Agência dos Correios - Nova Iguacu / RJ",
+            "Destino: Unidade de Tratamento - Rio De Janeiro / RJ"
+            ]
+        },
+        {
+            "data": "04/11/2022",
+            "hora": "20:55",
+            "local": "Nova Iguacu / RJ",
+            "status": "Objeto postado após o horário limite da unidade",
+            "subStatus": [
+            "Local: Agência dos Correios - Nova Iguacu / RJ"
+            ]}]},
+            {
+                "codigoOperadorLogistica": "NA671944733BR",
+                "dataPostagem":"20/11/2022",
+                "dataEntrega": null,
+                "localOrigem": "China",
+                "localDestino": null,
+                "status": "Objeto recebido pelos Correios do Brasil",
+                "etiquetas": [{"nome": "Natal", "cor": "red", "id":"1"}, {"nome": "Roupa", "cor": "purple", "id":"3"}],
+                "operadorLogistico":{"nome": "Correios", "id":"1"}, 
+                "registroMovimentacoes": [
+                    {
+                        "data": "26/11/2022",
+                        "hora": "13:54",
+                        "local": "Curitiba / PR",
+                        "status":"Objeto recebido pelos Correios do Brasil",
+                        "subStatus": [
+                            "Local: Unidade de Logística Integrada - Curitiba / PR",
+                            "<span class=\"minhasImportacoes\">Acesse o ambiente <a href=\"https://www.correios.com.br/encomendas-logistica/minhas-importacoes/minhas-importacoes\" target=\"_blank\">Minhas Importações</a></span>"
+                        ]
+                    },
+                    {
+                        "data": "20/11/2022",
+                        "hora": "01:55",
+                        "local": "China",
+                        "status": "Objeto postado",
+                        "subStatus": [
+                            "Local: País - /"
+                        ]
+            }]}
+            ],
+    "usuarios":[{
+        "id": "1",
+        "usuario": "CGPedroni",
+        "nome": "Carlos Guilherme",
+        "sobrenome": "Pedroni",
+        "cpf": "156.641.357-51",
+        "senha":"321245",
+        "configuracao":{
+            "atualizacaoAutomatica": true,
+            "tipoOrdenacaoPadrao": 0,
+            "intervaloAtualizacao": 1,
+            "horarioComercialAtualizacao": false
+        }},
+        {
+            "id": "2",
+            "usuario": "thiago",
+            "nome": "Thiago",
+            "sobrenome": "Redes",
+            "cpf": "115.086.890-24",
+            "senha":"123456",
+            "configuracao":{
+                "atualizacaoAutomatica": false,
+                "tipoOrdenacaoPadrao": 1,
+                "intervaloAtualizacao": 0,
+                "horarioComercialAtualizacao": false
+            }},
+        {
+            "id": "3",
+            "usuario": "Rose",
+            "nome": "Roselli",
+            "sobrenome": "Marcia",
+            "cpf": "363.378.800-05",
+            "senha":"123456",
+            "configuracao":{
+                "atualizacaoAutomatica": false,
+                "tipoOrdenacaoPadrao": 2,
+                "intervaloAtualizacao": 2,
+                "horarioComercialAtualizacao": false
+            }}    
+    ],
+    "etiquetas": [{"nome": "Natal", "cor": "red", "id":"1"}, {"nome": "Eletronico", "cor": "blue", "id":"2"},{"nome": "Roupa", "cor": "purple", "id":"3"}, {"nome": "Comida", "cor": "green", "id":"4"}]
+}
