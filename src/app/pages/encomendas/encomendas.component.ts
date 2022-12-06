@@ -64,13 +64,13 @@ export class EncomendasComponent implements OnInit {
     if(idSelecionado.length > 0){
       const dialogRef = this.dialog.open(CriarEtiquetaComponent)
 
-      dialogRef.afterClosed().subscribe(result => {
-        const { nome, cor } = result
+      // dialogRef.afterClosed().subscribe(result => {
+      //   const { nome, cor } = result
 
-        if(nome && cor)
-          this.etiquetasService.criarEAssociarPacote(new Etiqueta(nome, cor), idSelecionado)
-        }
-      )
+      //   // if(nome && cor)
+      //   //   //this.etiquetasService.criarEAssociarPacote(new Etiqueta(nome, cor), idSelecionado)
+      //   // }
+      // )
     
     } else {
       this.toastr.warning('É necessário selecionar alguma encomenda.', 'Alerta', {

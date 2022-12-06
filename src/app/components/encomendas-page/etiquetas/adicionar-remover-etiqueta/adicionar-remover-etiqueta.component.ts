@@ -28,7 +28,7 @@ export class AdicionarEtiquetaComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.idPacotes){
-      this.etiquetas$ = this.etiquetasService.getPorIdPacote(this.idPacotes)
+      //this.etiquetas$ = this.etiquetasService.getPorIdPacote(this.idPacotes)
       this.remover = true
     
     } else {
