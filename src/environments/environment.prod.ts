@@ -1,10 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'https://easytrack-api.onrender.com/api/'
 };
-
-export class AppConfig {
-  static get DESENVOLVIMENTO() {
-      return 'dev';
-  }
-  static readonly BASE_URL = 'localhost:3000/';
-}

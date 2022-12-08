@@ -20,6 +20,7 @@ a:hover {
 .icon-home {
     margin-right: 6px;
 }
+
 .flex-spacer {
     flex-grow: 1;
 }
@@ -42,6 +43,6 @@ a:hover {
     min-width: 100px;
 }
 
-.button-usuario mat-icon{
+.button-usuario mat-icon {
     margin: 0px 5px;
 }
