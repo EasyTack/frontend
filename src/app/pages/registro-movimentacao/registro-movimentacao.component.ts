@@ -26,23 +26,24 @@ export class RegistroMovimentacaoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if(!this.pacote?.codigo_operador_logistico){
-    this.carregandoLista = true
-    this.route.queryParams.subscribe(params => {
-      let id = params['id']
-      this.registroMovimentacaoService.getPorIdPacote(id).subscribe((rm: any) =>{
-        this.registroMovimentacoes$.next(rm)
-        this.carregandoLista = false
-      })
+    if (!this.pacote?.id) {
+      this.carregandoLista = true
+      this.route.queryParams.subscribe(params => {
+        let id = params['id']
+        // this.pacoteService.getId(id).subscribe((rm: any) => {
+        //   this.
+        //   this.registroMovimentacoes$.next(rm)
+        //   this.carregandoLista = false
+        // })
 
-      this.pacoteService.getId(id).subscribe((p: Pacote) => {
-        this.pacote = p
-        this.carregandoPacote = false
+        this.pacoteService.getId(id).subscribe((p: Pacote) => {
+          this.pacote = p
+          this.carregandoPacote = false
+        })
       })
-    })
-  }
-  /*else{
-    this.registroMovimentacoes = this.pacote.registroMovimentacoes;
-  }*/
+    }
+    /*else{
+      this.registroMovimentacoes = this.pacote.registroMovimentacoes;
+    }*/
   }
 }

@@ -10,7 +10,7 @@ export class AppConfig {
   static get DESENVOLVIMENTO() {
       return 'dev';
   }
-  static readonly BASE_URL = 'https://easytrack-api.onrender.com/api';
+  static readonly BASE_URL = 'http://localhost:3000/api';
 }
 
 

@@ -14,8 +14,8 @@ export class PacoteService extends GenericService<Pacote>{
   } 
 
 
-  getPacote(idPacote: String){//Com isso daqui trazendo as movimentacoes nao tem necessidade do crud de registro movimentacoes;
-    return this.http.get<Pacote>(`${this._url_}/${this.url}/${idPacote}`, { headers: this.cabecalho() })
+  getPacote(codPacote: String){//Com isso daqui trazendo as movimentacoes nao tem necessidade do crud de registro movimentacoes;
+    return this.http.get<Pacote>(`${this._url_}/${this.url}/${codPacote}`, { headers: this.cabecalho() })
 
   }
 
