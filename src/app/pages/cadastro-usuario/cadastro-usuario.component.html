@@ -1,0 +1,56 @@
+<div class="content-alight-center">
+    <div *ngIf="carregando" class="matbar card-white">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+
+    <form *ngIf="!carregando" [formGroup]="formCadastro" (ngSubmit)="submitForm()" class="form-center card-white">
+        <h1 *ngIf="!editandoCadastro" class="title">Cadastrar</h1>
+        <h1 *ngIf="editandoCadastro" class="title">Editar</h1>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput formControlName="usuario" type="text" placeholder="user">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="text" placeholder="user@email.com">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>CPF</mat-label>
+            <input matInput formControlName="documento" type="string" placeholder="000.000.00-00" mask="000.000.000-00">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome" type="text" placeholder="Carlos">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Sobrenome</mat-label>
+            <input matInput formControlName="sobrenome" type="text" placeholder="Assis">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Senha</mat-label>
+            <input matInput formControlName="senha" [type]="hide_senha ? 'password' : 'text'" placeholder="******">
+            <button mat-icon-button matSuffix (click)="hide_senha = !hide_senha">
+                <mat-icon>{{hide_senha ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Confirmar senha</mat-label>
+            <input matInput formControlName="confirmarSenha" [type]="hide_confirmarSenha ? 'password' : 'text'" placeholder="******">
+            <button mat-icon-button matSuffix (click)="hide_confirmarSenha = !hide_confirmarSenha">
+                <mat-icon>{{hide_senha ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <button *ngIf="!editandoCadastro" type="submit" mat-raised-button color="primary" class="highlight-button-blue">Cadastrar</button>
+        <a *ngIf="!editandoCadastro" [routerLink]="['/login']">Voltar para o login</a>
+
+        <button *ngIf="editandoCadastro" type="submit" mat-raised-button color="primary" class="highlight-button-blue">Salvar</button>
+    </form>
+</div>

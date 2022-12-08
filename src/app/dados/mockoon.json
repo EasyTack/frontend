@@ -1,0 +1,450 @@
+{
+  "uuid": "37404082-81a9-4e32-8f35-19c43668c86f",
+  "lastMigration": 24,
+  "name": "Mockoon",
+  "endpointPrefix": "angular",
+  "latency": 500,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "0d85ecd4-b2f9-456d-be78-f835a72aaef6",
+      "documentation": "obter todos os operadores logísticos",
+      "method": "get",
+      "endpoint": "operadorLogistico/getTodos",
+      "responses": [
+        {
+          "uuid": "148ffe7d-c4ac-4ec5-a57d-9aa493d89e12",
+          "body": "[\n  {\"id\": \"001\", \"cnpj\": \"34.028.316/0001-03\", \"razaoSocial\": \"Empresa Brasileira de Correios e Telégrafos\", \"nome\": \"Correios\"},\n  {\"id\": \"002\", \"cnpj\": \"04.884.082/0001-35\", \"razaoSocial\": \"Jadlog Logistica S.A\", \"nome\": \"Jadlog\"},\n  {\"id\": \"003\", \"cnpj\": \"95.591.723/0168-99\", \"razaoSocial\": \"Tnt Mercurio Cargas e Encomendas Expressas LTDA\", \"nome\": \"TNT\"},\n  {\"id\": \"004\", \"cnpj\": \"20.147.617/0001-41\", \"razaoSocial\": \"Jamef Transportes Eireli\", \"nome\": \"Jamef Encomendas Urgentes\"},\n  {\"id\": \"005\", \"cnpj\": \"17.765.676/0001-79\", \"razaoSocial\": \"J.F.B. Log Transportes LTDA\", \"nome\": \"JFB\"}\n]\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "35068c73-1ddf-4c6e-9e98-64495be01021",
+      "documentation": "obter todas as etiquetas",
+      "method": "get",
+      "endpoint": "etiqueta/getTodos",
+      "responses": [
+        {
+          "uuid": "276f0a51-a84b-44bc-81b2-d9df57c6e9f8",
+          "body": "[\n    {\"id\": \"tag001\", \"nome\": \"Presente\", \"cor\": \"#00bfff\", \"codigo\": \"\"},\n    {\"id\": \"tag002\", \"nome\": \"Trabalho\", \"cor\": \"#0000ff\", \"codigo\": \"\"},\n    {\"id\": \"tag003\", \"nome\": \"Enfeites de Natal\", \"cor\": \"#8000ff\", \"codigo\": \"\"},\n    {\"id\": \"tag004\", \"nome\": \"Computador Gamer\", \"cor\": \"#ff0080\", \"codigo\": \"\"},\n    {\"id\": \"tag005\", \"nome\": \"Esposa\", \"cor\": \"#ffff00\", \"codigo\": \"\"},\n    {\"id\": \"tag006\", \"nome\": \"Filho\", \"cor\": \"#ffe6e6\", \"codigo\": \"\"}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2e637951-6d25-4c9f-8a5d-ffec68712827",
+      "documentation": "obtem todos os pacotes",
+      "method": "get",
+      "endpoint": "pacote/getTodos",
+      "responses": [
+        {
+          "uuid": "6f78ae40-574b-499c-bcfd-b1cfbeee0321",
+          "body": "[\n\t{\n\t\t\"id\": 2416,\n\t\t\"codigoOperadorLogistica\": \"90B615A6-AC59-135A-1E73-D8003242D1A1\",\n\t\t\"dataPostagem\": \"Apr 6, 2022\",\n\t\t\"dataEntrega\": \"Oct 17, 2021\",\n\t\t\"localOrigem\": \"Newton\",\n\t\t\"localDestino\": \"Saint-Sébastien-sur-Loire\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 9564,\n\t\t\"codigoOperadorLogistica\": \"5B93CDB1-CC04-A3D2-2EE4-EE04DE4BDA4D\",\n\t\t\"dataPostagem\": \"Sep 8, 2023\",\n\t\t\"dataEntrega\": \"Jul 16, 2023\",\n\t\t\"localOrigem\": \"Lagos\",\n\t\t\"localDestino\": \"Spittal an der Drau\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 7242,\n\t\t\"codigoOperadorLogistica\": \"D471648A-4356-101F-5386-5BDB5570BE83\",\n\t\t\"dataPostagem\": \"Oct 19, 2023\",\n\t\t\"dataEntrega\": \"Sep 14, 2023\",\n\t\t\"localOrigem\": \"Farsund\",\n\t\t\"localDestino\": \"Querétaro\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 5164,\n\t\t\"codigoOperadorLogistica\": \"162E918A-EECB-689C-7285-A84CD5EE317C\",\n\t\t\"dataPostagem\": \"May 4, 2021\",\n\t\t\"dataEntrega\": \"Nov 18, 2021\",\n\t\t\"localOrigem\": \"Pasig\",\n\t\t\"localDestino\": \"Lakeshore\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 9959,\n\t\t\"codigoOperadorLogistica\": \"4328F6B5-E87A-0057-553B-C175316C683B\",\n\t\t\"dataPostagem\": \"Feb 23, 2023\",\n\t\t\"dataEntrega\": \"Nov 15, 2022\",\n\t\t\"localOrigem\": \"Trujillo\",\n\t\t\"localDestino\": \"Museum\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6231,\n\t\t\"codigoOperadorLogistica\": \"F9A784E6-525E-690B-C220-E75F56DCD22C\",\n\t\t\"dataPostagem\": \"May 15, 2023\",\n\t\t\"dataEntrega\": \"Sep 16, 2022\",\n\t\t\"localOrigem\": \"Nijmegen\",\n\t\t\"localDestino\": \"Jönköping\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 1897,\n\t\t\"codigoOperadorLogistica\": \"4158E87E-4797-BA24-FDA4-E243CB25B113\",\n\t\t\"dataPostagem\": \"Oct 19, 2021\",\n\t\t\"dataEntrega\": \"Aug 13, 2022\",\n\t\t\"localOrigem\": \"San Pietro Mussolino\",\n\t\t\"localDestino\": \"Candon\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 5967,\n\t\t\"codigoOperadorLogistica\": \"EB24B46C-293C-638D-9B28-EA6C6395482D\",\n\t\t\"dataPostagem\": \"Nov 10, 2021\",\n\t\t\"dataEntrega\": \"Feb 22, 2022\",\n\t\t\"localOrigem\": \"Chungju\",\n\t\t\"localDestino\": \"Belfast\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3118,\n\t\t\"codigoOperadorLogistica\": \"677A3627-CAC6-3BE4-1258-B635B6B33B7D\",\n\t\t\"dataPostagem\": \"Jan 4, 2022\",\n\t\t\"dataEntrega\": \"Jul 31, 2021\",\n\t\t\"localOrigem\": \"Bruck an der Mur\",\n\t\t\"localDestino\": \"Caucaia\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 4925,\n\t\t\"codigoOperadorLogistica\": \"2C92A5AB-CC5B-C493-8319-77C211C69F77\",\n\t\t\"dataPostagem\": \"Nov 29, 2021\",\n\t\t\"dataEntrega\": \"Dec 13, 2022\",\n\t\t\"localOrigem\": \"Linz\",\n\t\t\"localDestino\": \"Alphen aan den Rijn\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 8846,\n\t\t\"codigoOperadorLogistica\": \"9141F8B1-D873-779E-1CD5-C93C536339B2\",\n\t\t\"dataPostagem\": \"Jan 28, 2021\",\n\t\t\"dataEntrega\": \"Jun 5, 2023\",\n\t\t\"localOrigem\": \"Secunda\",\n\t\t\"localDestino\": \"Łódź\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 7858,\n\t\t\"codigoOperadorLogistica\": \"F6CC37D2-8749-A8F5-35F5-43D585B45AE5\",\n\t\t\"dataPostagem\": \"Sep 9, 2021\",\n\t\t\"dataEntrega\": \"Aug 21, 2022\",\n\t\t\"localOrigem\": \"Khmelnytskyi\",\n\t\t\"localDestino\": \"Armenia\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 8182,\n\t\t\"codigoOperadorLogistica\": \"478E1ECA-1CE8-6D54-639A-71715727E99C\",\n\t\t\"dataPostagem\": \"Jun 18, 2021\",\n\t\t\"dataEntrega\": \"Aug 2, 2022\",\n\t\t\"localOrigem\": \"Galway\",\n\t\t\"localDestino\": \"Castelbaldo\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 9508,\n\t\t\"codigoOperadorLogistica\": \"DF669981-3CD5-E513-0B95-97562D6AA9B4\",\n\t\t\"dataPostagem\": \"Aug 11, 2021\",\n\t\t\"dataEntrega\": \"Feb 24, 2023\",\n\t\t\"localOrigem\": \"Judenburg\",\n\t\t\"localDestino\": \"Changi Bay\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 8038,\n\t\t\"codigoOperadorLogistica\": \"C3C6D2E7-178D-B48A-4556-B03651F10EFA\",\n\t\t\"dataPostagem\": \"Jun 17, 2022\",\n\t\t\"dataEntrega\": \"Jan 8, 2023\",\n\t\t\"localOrigem\": \"Acquasanta Terme\",\n\t\t\"localDestino\": \"Moelv\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 1197,\n\t\t\"codigoOperadorLogistica\": \"A2674D3F-5C20-9BA3-13B5-8B297AB4CC33\",\n\t\t\"dataPostagem\": \"May 26, 2022\",\n\t\t\"dataEntrega\": \"Oct 23, 2023\",\n\t\t\"localOrigem\": \"Lauder\",\n\t\t\"localDestino\": \"Holmestrand\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 5709,\n\t\t\"codigoOperadorLogistica\": \"BB592C23-3764-7496-352C-E8569D02569B\",\n\t\t\"dataPostagem\": \"Jun 25, 2021\",\n\t\t\"dataEntrega\": \"Oct 25, 2021\",\n\t\t\"localOrigem\": \"Cúcuta\",\n\t\t\"localDestino\": \"Taupo\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 8222,\n\t\t\"codigoOperadorLogistica\": \"455E99BA-1421-2276-9748-578DC07BBC32\",\n\t\t\"dataPostagem\": \"Oct 23, 2023\",\n\t\t\"dataEntrega\": \"Jun 18, 2022\",\n\t\t\"localOrigem\": \"Moscow\",\n\t\t\"localDestino\": \"General Escobedo\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 4397,\n\t\t\"codigoOperadorLogistica\": \"1A69B49B-EB16-2935-5E9C-0B68B7E3EDB2\",\n\t\t\"dataPostagem\": \"Dec 31, 2022\",\n\t\t\"dataEntrega\": \"May 1, 2023\",\n\t\t\"localOrigem\": \"Anklam\",\n\t\t\"localDestino\": \"Chonchi\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3407,\n\t\t\"codigoOperadorLogistica\": \"1907A82C-79C2-1EFF-FDA7-FC7DBF85D1FE\",\n\t\t\"dataPostagem\": \"Feb 18, 2023\",\n\t\t\"dataEntrega\": \"Aug 29, 2022\",\n\t\t\"localOrigem\": \"Recife\",\n\t\t\"localDestino\": \"Alingsås\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 8846,\n\t\t\"codigoOperadorLogistica\": \"5C762426-9848-1943-2956-0A0589331235\",\n\t\t\"dataPostagem\": \"Oct 11, 2023\",\n\t\t\"dataEntrega\": \"Jun 10, 2022\",\n\t\t\"localOrigem\": \"Middelburg\",\n\t\t\"localDestino\": \"Sandviken\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 8465,\n\t\t\"codigoOperadorLogistica\": \"0C1118B4-141D-12BB-0E64-BCE643AEB30C\",\n\t\t\"dataPostagem\": \"Nov 7, 2023\",\n\t\t\"dataEntrega\": \"Sep 22, 2023\",\n\t\t\"localOrigem\": \"Udaipur\",\n\t\t\"localDestino\": \"Lào Cai\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 6190,\n\t\t\"codigoOperadorLogistica\": \"CCBC4BD9-BB91-C3DB-4640-45D710AC3552\",\n\t\t\"dataPostagem\": \"Jul 11, 2023\",\n\t\t\"dataEntrega\": \"Sep 25, 2023\",\n\t\t\"localOrigem\": \"Silvassa\",\n\t\t\"localDestino\": \"GomzŽ-Andoumont\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 5361,\n\t\t\"codigoOperadorLogistica\": \"2F385BCE-FA14-D10B-33AA-2A74F9764C41\",\n\t\t\"dataPostagem\": \"Sep 28, 2023\",\n\t\t\"dataEntrega\": \"Aug 14, 2022\",\n\t\t\"localOrigem\": \"Opole\",\n\t\t\"localDestino\": \"Bedok\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 7551,\n\t\t\"codigoOperadorLogistica\": \"2744EE9A-DBE1-F9E8-9A0D-6EC992FA35CC\",\n\t\t\"dataPostagem\": \"Jan 28, 2022\",\n\t\t\"dataEntrega\": \"Apr 6, 2022\",\n\t\t\"localOrigem\": \"Bossire\",\n\t\t\"localDestino\": \"Ödemiş\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3177,\n\t\t\"codigoOperadorLogistica\": \"686FFCDD-11C5-45E1-9C13-B8D7BEBC8451\",\n\t\t\"dataPostagem\": \"Aug 18, 2022\",\n\t\t\"dataEntrega\": \"Feb 10, 2022\",\n\t\t\"localOrigem\": \"Knittelfeld\",\n\t\t\"localDestino\": \"Blois\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 4998,\n\t\t\"codigoOperadorLogistica\": \"04CA642B-37C6-D299-AEB7-3C6C53AC642E\",\n\t\t\"dataPostagem\": \"Mar 22, 2022\",\n\t\t\"dataEntrega\": \"Aug 27, 2022\",\n\t\t\"localOrigem\": \"Gouda\",\n\t\t\"localDestino\": \"Saltillo\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 8011,\n\t\t\"codigoOperadorLogistica\": \"A1F3AB5E-0453-EE9B-C1E1-56F7BC8A1537\",\n\t\t\"dataPostagem\": \"Feb 17, 2022\",\n\t\t\"dataEntrega\": \"Mar 10, 2022\",\n\t\t\"localOrigem\": \"Boechout\",\n\t\t\"localDestino\": \"Ödemiş\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 4016,\n\t\t\"codigoOperadorLogistica\": \"DB2DCE4C-9186-1278-EE23-3364D478FACF\",\n\t\t\"dataPostagem\": \"Dec 23, 2020\",\n\t\t\"dataEntrega\": \"Aug 27, 2023\",\n\t\t\"localOrigem\": \"Shanxi\",\n\t\t\"localDestino\": \"Bogotá\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 4072,\n\t\t\"codigoOperadorLogistica\": \"B8D627DB-7CD4-2285-BAA6-354A9C310DAB\",\n\t\t\"dataPostagem\": \"Jan 4, 2023\",\n\t\t\"dataEntrega\": \"Sep 17, 2023\",\n\t\t\"localOrigem\": \"Baden\",\n\t\t\"localDestino\": \"Tanjung Pinang\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6043,\n\t\t\"codigoOperadorLogistica\": \"C66E2456-DFB5-CFA2-9103-E2CB7BA85515\",\n\t\t\"dataPostagem\": \"Jul 1, 2023\",\n\t\t\"dataEntrega\": \"Jul 11, 2022\",\n\t\t\"localOrigem\": \"Dornbirn\",\n\t\t\"localDestino\": \"Le Havre\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 4082,\n\t\t\"codigoOperadorLogistica\": \"C416E82A-2B95-67A3-9B70-69CED1967EB8\",\n\t\t\"dataPostagem\": \"Dec 3, 2021\",\n\t\t\"dataEntrega\": \"Sep 22, 2022\",\n\t\t\"localOrigem\": \"Juárez\",\n\t\t\"localDestino\": \"Bunbury\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 5786,\n\t\t\"codigoOperadorLogistica\": \"71A2B432-C2C2-378B-3282-DF369C1EC803\",\n\t\t\"dataPostagem\": \"Jun 26, 2021\",\n\t\t\"dataEntrega\": \"Jun 10, 2022\",\n\t\t\"localOrigem\": \"Vetlanda\",\n\t\t\"localDestino\": \"Bayswater\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 4063,\n\t\t\"codigoOperadorLogistica\": \"819B3A60-84EF-9860-13E2-7EACB895C962\",\n\t\t\"dataPostagem\": \"Apr 4, 2021\",\n\t\t\"dataEntrega\": \"Feb 2, 2022\",\n\t\t\"localOrigem\": \"Belfast\",\n\t\t\"localDestino\": \"Edinburgh\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3477,\n\t\t\"codigoOperadorLogistica\": \"8C954636-EAF6-B335-ADBF-7B90258245C7\",\n\t\t\"dataPostagem\": \"Feb 23, 2023\",\n\t\t\"dataEntrega\": \"Nov 28, 2022\",\n\t\t\"localOrigem\": \"Arauca\",\n\t\t\"localDestino\": \"Chiquinquirá\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 9979,\n\t\t\"codigoOperadorLogistica\": \"841D54D2-59A2-B999-CA9E-01AE5B0795E8\",\n\t\t\"dataPostagem\": \"Nov 24, 2021\",\n\t\t\"dataEntrega\": \"Jun 19, 2022\",\n\t\t\"localOrigem\": \"Long Xuyên\",\n\t\t\"localDestino\": \"Marine Parade\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 3716,\n\t\t\"codigoOperadorLogistica\": \"E7CDD5E4-72DD-EFEB-8C49-7383C0AD5AF1\",\n\t\t\"dataPostagem\": \"Jun 19, 2022\",\n\t\t\"dataEntrega\": \"Apr 15, 2023\",\n\t\t\"localOrigem\": \"Buguma\",\n\t\t\"localDestino\": \"Cartagena\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 9817,\n\t\t\"codigoOperadorLogistica\": \"3DEB3236-D896-69C9-C278-C4B746CC2139\",\n\t\t\"dataPostagem\": \"Apr 18, 2021\",\n\t\t\"dataEntrega\": \"Oct 17, 2022\",\n\t\t\"localOrigem\": \"Henan\",\n\t\t\"localDestino\": \"Neunkirchen\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 6603,\n\t\t\"codigoOperadorLogistica\": \"F5FF5DFA-573B-1037-D8C6-AA76B1A79A13\",\n\t\t\"dataPostagem\": \"Dec 24, 2022\",\n\t\t\"dataEntrega\": \"Sep 22, 2021\",\n\t\t\"localOrigem\": \"Gambolò\",\n\t\t\"localDestino\": \"Bayugan\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 5210,\n\t\t\"codigoOperadorLogistica\": \"893A2B41-E540-AEC1-8161-83963D0D5A91\",\n\t\t\"dataPostagem\": \"Dec 28, 2021\",\n\t\t\"dataEntrega\": \"Aug 19, 2021\",\n\t\t\"localOrigem\": \"Brahmapur\",\n\t\t\"localDestino\": \"Onitsha\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6060,\n\t\t\"codigoOperadorLogistica\": \"FB1E88A4-A257-B545-DAF3-B12756CB7122\",\n\t\t\"dataPostagem\": \"Feb 3, 2022\",\n\t\t\"dataEntrega\": \"Aug 16, 2022\",\n\t\t\"localOrigem\": \"Okigwe\",\n\t\t\"localDestino\": \"Chuncheon\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 7254,\n\t\t\"codigoOperadorLogistica\": \"EF59F53D-E2F5-2B2C-5148-68AC60CAD7FD\",\n\t\t\"dataPostagem\": \"Jul 11, 2022\",\n\t\t\"dataEntrega\": \"Jan 17, 2023\",\n\t\t\"localOrigem\": \"Gwangju\",\n\t\t\"localDestino\": \"Bắc Kạn\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 5391,\n\t\t\"codigoOperadorLogistica\": \"E5CA7445-375A-96FB-2BB5-DC3B4D72252D\",\n\t\t\"dataPostagem\": \"Nov 11, 2021\",\n\t\t\"dataEntrega\": \"May 2, 2023\",\n\t\t\"localOrigem\": \"Kaliningrad\",\n\t\t\"localDestino\": \"Hidalgo del Parral\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 2475,\n\t\t\"codigoOperadorLogistica\": \"9B3AE9AC-0426-4931-91D8-14A46BED0792\",\n\t\t\"dataPostagem\": \"Dec 29, 2022\",\n\t\t\"dataEntrega\": \"Apr 3, 2023\",\n\t\t\"localOrigem\": \"Hà Tĩnh\",\n\t\t\"localDestino\": \"Vladimir\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 4975,\n\t\t\"codigoOperadorLogistica\": \"AA733E36-8411-1DBA-7B78-69F0B90D7791\",\n\t\t\"dataPostagem\": \"Aug 19, 2023\",\n\t\t\"dataEntrega\": \"Aug 24, 2021\",\n\t\t\"localOrigem\": \"Köthen\",\n\t\t\"localDestino\": \"Kincardine\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 7626,\n\t\t\"codigoOperadorLogistica\": \"149182EC-2346-E929-5A31-2D6E9A16D335\",\n\t\t\"dataPostagem\": \"Jan 31, 2023\",\n\t\t\"dataEntrega\": \"Jun 16, 2023\",\n\t\t\"localOrigem\": \"Urbe\",\n\t\t\"localDestino\": \"Cercepiccola\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 4464,\n\t\t\"codigoOperadorLogistica\": \"9DE67516-D76C-77A8-AD65-A10E2B586B42\",\n\t\t\"dataPostagem\": \"Apr 11, 2021\",\n\t\t\"dataEntrega\": \"Sep 24, 2023\",\n\t\t\"localOrigem\": \"Muzzafarabad\",\n\t\t\"localDestino\": \"Aalst\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 4619,\n\t\t\"codigoOperadorLogistica\": \"7A23BEA0-5DA3-8A2F-1BAC-9BE4AE7C0185\",\n\t\t\"dataPostagem\": \"Jun 28, 2023\",\n\t\t\"dataEntrega\": \"Sep 7, 2023\",\n\t\t\"localOrigem\": \"Western Water Catchment\",\n\t\t\"localDestino\": \"Logroño\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 4897,\n\t\t\"codigoOperadorLogistica\": \"18A508DB-1BAD-B453-DEAC-BAC9E3F25999\",\n\t\t\"dataPostagem\": \"Jul 6, 2022\",\n\t\t\"dataEntrega\": \"Apr 23, 2023\",\n\t\t\"localOrigem\": \"Fosses-la-Ville\",\n\t\t\"localDestino\": \"Zielona Góra\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3209,\n\t\t\"codigoOperadorLogistica\": \"0D5DB25F-3198-9813-4E95-4B4ADAB228A9\",\n\t\t\"dataPostagem\": \"Sep 6, 2022\",\n\t\t\"dataEntrega\": \"Feb 17, 2023\",\n\t\t\"localOrigem\": \"Farsund\",\n\t\t\"localDestino\": \"Dutse\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 9620,\n\t\t\"codigoOperadorLogistica\": \"60830CD0-73B4-9CFC-EEA3-221A24D4D4CB\",\n\t\t\"dataPostagem\": \"Oct 12, 2022\",\n\t\t\"dataEntrega\": \"May 31, 2023\",\n\t\t\"localOrigem\": \"Sichuan\",\n\t\t\"localDestino\": \"Hérouville-Saint-Clair\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 8085,\n\t\t\"codigoOperadorLogistica\": \"5E251603-94C6-4CD9-4CC0-56ADA4689341\",\n\t\t\"dataPostagem\": \"Dec 12, 2020\",\n\t\t\"dataEntrega\": \"Oct 10, 2021\",\n\t\t\"localOrigem\": \"Mejillones\",\n\t\t\"localDestino\": \"San Juan de Girón\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 3319,\n\t\t\"codigoOperadorLogistica\": \"2CD86442-31C3-96C9-85A7-E6C1568C272A\",\n\t\t\"dataPostagem\": \"Aug 29, 2021\",\n\t\t\"dataEntrega\": \"Mar 13, 2023\",\n\t\t\"localOrigem\": \"Wechelderzande\",\n\t\t\"localDestino\": \"San Rafael\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 5000,\n\t\t\"codigoOperadorLogistica\": \"4AD1972C-72FB-9770-BA75-EF5F80A638FB\",\n\t\t\"dataPostagem\": \"Jul 10, 2022\",\n\t\t\"dataEntrega\": \"Mar 31, 2022\",\n\t\t\"localOrigem\": \"Llanidloes\",\n\t\t\"localDestino\": \"Oaxaca\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 9236,\n\t\t\"codigoOperadorLogistica\": \"2A9ECEB0-7CA5-9C7F-83E1-DB2583221010\",\n\t\t\"dataPostagem\": \"Feb 19, 2021\",\n\t\t\"dataEntrega\": \"Jul 18, 2021\",\n\t\t\"localOrigem\": \"Shaanxi\",\n\t\t\"localDestino\": \"Ketchikan\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 5798,\n\t\t\"codigoOperadorLogistica\": \"76ED139B-F821-2342-2DC6-493B6B333989\",\n\t\t\"dataPostagem\": \"Apr 6, 2021\",\n\t\t\"dataEntrega\": \"Mar 17, 2022\",\n\t\t\"localOrigem\": \"Anamur\",\n\t\t\"localDestino\": \"Märsta\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 4138,\n\t\t\"codigoOperadorLogistica\": \"1774544A-ED5A-CD1B-2E29-6964D0CB7D8C\",\n\t\t\"dataPostagem\": \"Aug 5, 2022\",\n\t\t\"dataEntrega\": \"Feb 27, 2022\",\n\t\t\"localOrigem\": \"Mora\",\n\t\t\"localDestino\": \"Nelspruit\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 3176,\n\t\t\"codigoOperadorLogistica\": \"2B259875-6879-7A6C-C6CF-118B78A25EC4\",\n\t\t\"dataPostagem\": \"Jul 27, 2023\",\n\t\t\"dataEntrega\": \"Jan 26, 2022\",\n\t\t\"localOrigem\": \"Pasir Ris\",\n\t\t\"localDestino\": \"Saint-Sébastien-sur-Loire\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 5522,\n\t\t\"codigoOperadorLogistica\": \"EB59988B-A30F-686F-803D-D656289EF649\",\n\t\t\"dataPostagem\": \"Aug 27, 2021\",\n\t\t\"dataEntrega\": \"Jul 24, 2022\",\n\t\t\"localOrigem\": \"Belfast\",\n\t\t\"localDestino\": \"Monclova\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6189,\n\t\t\"codigoOperadorLogistica\": \"8D8E1010-1EC6-B768-D947-3CB495E8A235\",\n\t\t\"dataPostagem\": \"Feb 18, 2021\",\n\t\t\"dataEntrega\": \"Aug 18, 2021\",\n\t\t\"localOrigem\": \"Timaru\",\n\t\t\"localDestino\": \"Turbo\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 9069,\n\t\t\"codigoOperadorLogistica\": \"5A327192-2B4E-757A-D439-E23DA0661CC2\",\n\t\t\"dataPostagem\": \"Jun 9, 2021\",\n\t\t\"dataEntrega\": \"Oct 18, 2023\",\n\t\t\"localOrigem\": \"Tarnów\",\n\t\t\"localDestino\": \"Envigado\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 2506,\n\t\t\"codigoOperadorLogistica\": \"611E6A4B-453B-C2B1-41D4-CA948BD3ED99\",\n\t\t\"dataPostagem\": \"Oct 2, 2021\",\n\t\t\"dataEntrega\": \"Feb 17, 2023\",\n\t\t\"localOrigem\": \"Borriana\",\n\t\t\"localDestino\": \"Newcastle\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 3062,\n\t\t\"codigoOperadorLogistica\": \"361793F0-4865-6DC3-4C48-6B34B4BB734C\",\n\t\t\"dataPostagem\": \"Apr 13, 2021\",\n\t\t\"dataEntrega\": \"Oct 1, 2023\",\n\t\t\"localOrigem\": \"Yunnan\",\n\t\t\"localDestino\": \"Duffel\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 1377,\n\t\t\"codigoOperadorLogistica\": \"AF3A2BDB-E16D-E9B4-DD02-D07B910777DA\",\n\t\t\"dataPostagem\": \"Jan 14, 2021\",\n\t\t\"dataEntrega\": \"Oct 1, 2023\",\n\t\t\"localOrigem\": \"Portsmouth\",\n\t\t\"localDestino\": \"Alajuela\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3644,\n\t\t\"codigoOperadorLogistica\": \"4B8B1F9F-77DD-F3BD-EA64-EE5734E9B831\",\n\t\t\"dataPostagem\": \"Dec 17, 2020\",\n\t\t\"dataEntrega\": \"Sep 1, 2023\",\n\t\t\"localOrigem\": \"Yeongju\",\n\t\t\"localDestino\": \"Londrina\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 6578,\n\t\t\"codigoOperadorLogistica\": \"5805318A-CDB2-7B86-A8AF-148E2B8B3713\",\n\t\t\"dataPostagem\": \"Feb 8, 2022\",\n\t\t\"dataEntrega\": \"Sep 5, 2022\",\n\t\t\"localOrigem\": \"Hunan\",\n\t\t\"localDestino\": \"Galway\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 9452,\n\t\t\"codigoOperadorLogistica\": \"CC8CAA2B-3C9E-895C-35A9-C93A71A1C1F4\",\n\t\t\"dataPostagem\": \"Jun 4, 2022\",\n\t\t\"dataEntrega\": \"Mar 8, 2022\",\n\t\t\"localOrigem\": \"Stavanger\",\n\t\t\"localDestino\": \"Meduno\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6888,\n\t\t\"codigoOperadorLogistica\": \"6413985E-D3E8-49AA-02D7-7C008D962DB8\",\n\t\t\"dataPostagem\": \"Oct 7, 2021\",\n\t\t\"dataEntrega\": \"Apr 24, 2023\",\n\t\t\"localOrigem\": \"Wha Ti\",\n\t\t\"localDestino\": \"Samaniego\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 8315,\n\t\t\"codigoOperadorLogistica\": \"67BE84DC-2367-F65C-7E55-70C969935334\",\n\t\t\"dataPostagem\": \"Jun 7, 2021\",\n\t\t\"dataEntrega\": \"Aug 3, 2021\",\n\t\t\"localOrigem\": \"Nelson\",\n\t\t\"localDestino\": \"Coihaique\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 5026,\n\t\t\"codigoOperadorLogistica\": \"80EA4EF1-8AAE-B0F1-44B8-2D93AC389AD6\",\n\t\t\"dataPostagem\": \"Mar 22, 2023\",\n\t\t\"dataEntrega\": \"Oct 10, 2022\",\n\t\t\"localOrigem\": \"Greifswald\",\n\t\t\"localDestino\": \"Galway\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 8276,\n\t\t\"codigoOperadorLogistica\": \"5385BEE0-7ED5-5BAA-75DC-9715EC4F7BC3\",\n\t\t\"dataPostagem\": \"Feb 8, 2021\",\n\t\t\"dataEntrega\": \"May 13, 2022\",\n\t\t\"localOrigem\": \"Henan\",\n\t\t\"localDestino\": \"Leticia\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 3856,\n\t\t\"codigoOperadorLogistica\": \"54893F85-A9C5-1E72-6768-8CB73D73D197\",\n\t\t\"dataPostagem\": \"Aug 12, 2022\",\n\t\t\"dataEntrega\": \"Jul 12, 2021\",\n\t\t\"localOrigem\": \"Camaçari\",\n\t\t\"localDestino\": \"Guizhou\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 4213,\n\t\t\"codigoOperadorLogistica\": \"0AA8D0BD-E98A-8E13-B917-A6ACB953ABC3\",\n\t\t\"dataPostagem\": \"Apr 12, 2023\",\n\t\t\"dataEntrega\": \"Aug 30, 2022\",\n\t\t\"localOrigem\": \"Bollnäs\",\n\t\t\"localDestino\": \"Port Blair\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 9962,\n\t\t\"codigoOperadorLogistica\": \"29B869EF-759E-5C64-2325-284185C55AB1\",\n\t\t\"dataPostagem\": \"Jul 28, 2021\",\n\t\t\"dataEntrega\": \"Oct 5, 2021\",\n\t\t\"localOrigem\": \"Dublin\",\n\t\t\"localDestino\": \"Celaya\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 2227,\n\t\t\"codigoOperadorLogistica\": \"17DDE455-6F77-85E6-DED7-B64A566275C1\",\n\t\t\"dataPostagem\": \"May 30, 2021\",\n\t\t\"dataEntrega\": \"Oct 21, 2021\",\n\t\t\"localOrigem\": \"Pontevedra\",\n\t\t\"localDestino\": \"San Nicolás\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 5031,\n\t\t\"codigoOperadorLogistica\": \"3D17FCF1-C53A-C872-AC58-9CC4C6C8DA48\",\n\t\t\"dataPostagem\": \"Sep 24, 2023\",\n\t\t\"dataEntrega\": \"Aug 1, 2021\",\n\t\t\"localOrigem\": \"San Francisco\",\n\t\t\"localDestino\": \"Ghaziabad\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 1822,\n\t\t\"codigoOperadorLogistica\": \"75A59034-C866-8879-26ED-4C9FDB9A9EAD\",\n\t\t\"dataPostagem\": \"Jan 3, 2022\",\n\t\t\"dataEntrega\": \"Jun 18, 2022\",\n\t\t\"localOrigem\": \"Tocopilla\",\n\t\t\"localDestino\": \"Bethlehem\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 1387,\n\t\t\"codigoOperadorLogistica\": \"E4A3BDA4-6FE5-2279-C4E4-61DD34A3ABBC\",\n\t\t\"dataPostagem\": \"Mar 24, 2022\",\n\t\t\"dataEntrega\": \"Apr 21, 2023\",\n\t\t\"localOrigem\": \"Ang Mo Kio\",\n\t\t\"localDestino\": \"Yellowknife\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 5374,\n\t\t\"codigoOperadorLogistica\": \"6218D5E1-546E-2327-8044-28D003BB158B\",\n\t\t\"dataPostagem\": \"Jan 21, 2023\",\n\t\t\"dataEntrega\": \"Aug 4, 2022\",\n\t\t\"localOrigem\": \"Luhansk\",\n\t\t\"localDestino\": \"Palmerston\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 8692,\n\t\t\"codigoOperadorLogistica\": \"4D7D9E8B-96A0-4195-79ED-D9181DA45B44\",\n\t\t\"dataPostagem\": \"May 22, 2021\",\n\t\t\"dataEntrega\": \"Nov 8, 2023\",\n\t\t\"localOrigem\": \"Gboko\",\n\t\t\"localDestino\": \"Tân Uyên\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 7603,\n\t\t\"codigoOperadorLogistica\": \"778CE8E5-12ED-3684-5A37-37CA32684632\",\n\t\t\"dataPostagem\": \"Jan 21, 2023\",\n\t\t\"dataEntrega\": \"Jul 24, 2022\",\n\t\t\"localOrigem\": \"Tours\",\n\t\t\"localDestino\": \"Ulyanovsk\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 9813,\n\t\t\"codigoOperadorLogistica\": \"190AED14-2485-1629-499A-F25F2EAA4AC7\",\n\t\t\"dataPostagem\": \"Aug 25, 2023\",\n\t\t\"dataEntrega\": \"Jun 16, 2023\",\n\t\t\"localOrigem\": \"Chagai\",\n\t\t\"localDestino\": \"Sens\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 8654,\n\t\t\"codigoOperadorLogistica\": \"1C2061F4-4D99-234F-BB5B-02594806A223\",\n\t\t\"dataPostagem\": \"Sep 18, 2023\",\n\t\t\"dataEntrega\": \"Jul 21, 2021\",\n\t\t\"localOrigem\": \"Crato\",\n\t\t\"localDestino\": \"Fort Wayne\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 4082,\n\t\t\"codigoOperadorLogistica\": \"A0B4EA65-E185-6D12-0BB3-ABED396696E8\",\n\t\t\"dataPostagem\": \"Jan 5, 2022\",\n\t\t\"dataEntrega\": \"Jul 24, 2022\",\n\t\t\"localOrigem\": \"Thủ Dầu Một\",\n\t\t\"localDestino\": \"Derby\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 3870,\n\t\t\"codigoOperadorLogistica\": \"BAA1E1D9-8B4B-D2C1-556A-83D71B53076A\",\n\t\t\"dataPostagem\": \"May 3, 2023\",\n\t\t\"dataEntrega\": \"May 11, 2022\",\n\t\t\"localOrigem\": \"San José de Alajuela\",\n\t\t\"localDestino\": \"Giyani\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 4972,\n\t\t\"codigoOperadorLogistica\": \"545579E5-A011-DF79-70C3-F4D5D6A4216E\",\n\t\t\"dataPostagem\": \"Nov 18, 2021\",\n\t\t\"dataEntrega\": \"Oct 4, 2023\",\n\t\t\"localOrigem\": \"Jayapura\",\n\t\t\"localDestino\": \"Gorzów Wielkopolski\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 3415,\n\t\t\"codigoOperadorLogistica\": \"5D28B873-14B9-DD19-D6DC-8D9CE18B8501\",\n\t\t\"dataPostagem\": \"Mar 26, 2022\",\n\t\t\"dataEntrega\": \"Jul 16, 2023\",\n\t\t\"localOrigem\": \"Wrocław\",\n\t\t\"localDestino\": \"Izmail\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 7112,\n\t\t\"codigoOperadorLogistica\": \"7E5C9863-B307-91AD-E386-3C16E7DE3F49\",\n\t\t\"dataPostagem\": \"Dec 26, 2020\",\n\t\t\"dataEntrega\": \"Apr 4, 2022\",\n\t\t\"localOrigem\": \"Newton Abbot\",\n\t\t\"localDestino\": \"Galway\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 2260,\n\t\t\"codigoOperadorLogistica\": \"854CCDE8-BE6C-45D6-36D3-32D26B2DA53A\",\n\t\t\"dataPostagem\": \"Aug 25, 2021\",\n\t\t\"dataEntrega\": \"Nov 23, 2022\",\n\t\t\"localOrigem\": \"Sungai Penuh\",\n\t\t\"localDestino\": \"Brest\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 6099,\n\t\t\"codigoOperadorLogistica\": \"311E3CB3-DF31-82E7-7EE2-280C2C8177BB\",\n\t\t\"dataPostagem\": \"Jun 14, 2023\",\n\t\t\"dataEntrega\": \"May 3, 2022\",\n\t\t\"localOrigem\": \"Benalla\",\n\t\t\"localDestino\": \"Vigan\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 4506,\n\t\t\"codigoOperadorLogistica\": \"E3B587B7-B6DE-77A6-D689-C3C7E4BE692B\",\n\t\t\"dataPostagem\": \"Apr 14, 2022\",\n\t\t\"dataEntrega\": \"Feb 21, 2022\",\n\t\t\"localOrigem\": \"Lebowakgomo\",\n\t\t\"localDestino\": \"Södertälje\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 8089,\n\t\t\"codigoOperadorLogistica\": \"AC162E6F-9671-3E75-8A9E-4D59D547E31C\",\n\t\t\"dataPostagem\": \"Sep 28, 2022\",\n\t\t\"dataEntrega\": \"Mar 11, 2023\",\n\t\t\"localOrigem\": \"Mykolaiv\",\n\t\t\"localDestino\": \"Trochu\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 8731,\n\t\t\"codigoOperadorLogistica\": \"7A3415DC-5DA0-ACAD-197F-F638B29560C1\",\n\t\t\"dataPostagem\": \"Oct 16, 2023\",\n\t\t\"dataEntrega\": \"Aug 14, 2021\",\n\t\t\"localOrigem\": \"Iowa City\",\n\t\t\"localDestino\": \"Bear\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag003\",\"nome\":\"Enfeites de Natal\", \"cor\":\"#8000ff\"}]\n\t},\n\t{\n\t\t\"id\": 8674,\n\t\t\"codigoOperadorLogistica\": \"A034C513-6F85-499F-EE8E-1141FD8846EC\",\n\t\t\"dataPostagem\": \"Oct 7, 2021\",\n\t\t\"dataEntrega\": \"Dec 25, 2022\",\n\t\t\"localOrigem\": \"Fogliano Redipuglia\",\n\t\t\"localDestino\": \"Lambayeque\",\n\t\t\"status\": \"Em trânsito\",\n\t\t\"etiquetas\": [{\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}]\n\t},\n\t{\n\t\t\"id\": 3594,\n\t\t\"codigoOperadorLogistica\": \"98566190-A3E2-6DCB-DF33-31314548E2D8\",\n\t\t\"dataPostagem\": \"Jul 25, 2023\",\n\t\t\"dataEntrega\": \"Aug 19, 2023\",\n\t\t\"localOrigem\": \"Castello Tesino\",\n\t\t\"localDestino\": \"Bollnäs\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": []\n\t},\n\t{\n\t\t\"id\": 5952,\n\t\t\"codigoOperadorLogistica\": \"B60DE268-1A83-7298-6B72-2451A062C393\",\n\t\t\"dataPostagem\": \"Feb 12, 2022\",\n\t\t\"dataEntrega\": \"Aug 26, 2023\",\n\t\t\"localOrigem\": \"Spijkenisse\",\n\t\t\"localDestino\": \"Belfast\",\n\t\t\"status\": \"Desembaraço aduaneiro\",\n\t\t\"etiquetas\": [{\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}, {\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}]\n\t},\n\t{\n\t\t\"id\": 4572,\n\t\t\"codigoOperadorLogistica\": \"23FBCBBE-C913-9FC8-4BB4-3C9AAC86C575\",\n\t\t\"dataPostagem\": \"Jan 23, 2021\",\n\t\t\"dataEntrega\": \"Oct 25, 2021\",\n\t\t\"localOrigem\": \"Chungju\",\n\t\t\"localDestino\": \"General Lagos\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag004\",\"nome\":\"Computador Gamer\", \"cor\":\"#ff0080\"}, {\"id\":\"tag001\",\"nome\":\"Presente\", \"cor\":\"#00bfff\"}, {\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 9099,\n\t\t\"codigoOperadorLogistica\": \"594D3524-9EAE-E2F8-E6A9-B6D1253EFE3A\",\n\t\t\"dataPostagem\": \"Jun 17, 2022\",\n\t\t\"dataEntrega\": \"Jul 24, 2021\",\n\t\t\"localOrigem\": \"Wrocław\",\n\t\t\"localDestino\": \"Corral\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}, {\"id\":\"tag002\",\"nome\":\"Trabalho\", \"cor\":\"#0000ff\"}]\n\t},\n\t{\n\t\t\"id\": 5523,\n\t\t\"codigoOperadorLogistica\": \"27BBADCE-14D6-3939-24AB-A679EF38FD5B\",\n\t\t\"dataPostagem\": \"Apr 11, 2022\",\n\t\t\"dataEntrega\": \"Sep 4, 2023\",\n\t\t\"localOrigem\": \"Gorontalo\",\n\t\t\"localDestino\": \"Criciúma\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": [{\"id\":\"tag005\",\"nome\":\"Esposa\", \"cor\":\"#ffff00\"}]\n\t},\n\t{\n\t\t\"id\": 1118,\n\t\t\"codigoOperadorLogistica\": \"C6353C8D-88DA-0B19-A322-40EE98AEC3ED\",\n\t\t\"dataPostagem\": \"Apr 17, 2021\",\n\t\t\"dataEntrega\": \"Aug 16, 2022\",\n\t\t\"localOrigem\": \"Berlin\",\n\t\t\"localDestino\": \"Kavaratti\",\n\t\t\"status\": \"Saiu para entrega\",\n\t\t\"etiquetas\": []\n\t}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "03fadc9e-f050-4475-9053-9de7d09a30a1",
+      "documentation": "obter pacote por id",
+      "method": "get",
+      "endpoint": "pacote/:id",
+      "responses": [
+        {
+          "uuid": "091c6044-df4d-4160-88cb-33e07c6c2ecc",
+          "body": "{\n\t\t\"id\": 2416,\n\t\t\"codigoOperadorLogistica\": \"90B615A6-AC59-135A-1E73-D8003242D1A1\",\n\t\t\"dataPostagem\": \"Apr 6, 2022\",\n\t\t\"dataEntrega\": \"Oct 17, 2021\",\n\t\t\"localOrigem\": \"Newton\",\n\t\t\"localDestino\": \"Saint-Sébastien-sur-Loire\",\n\t\t\"status\": \"Entregue\",\n\t\t\"etiquetas\": []\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "2935417f-219d-4179-888c-93aa971cbdab",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f00bb66a-2d08-4056-85bc-ad0dbdad0bdb",
+      "documentation": "obtendo registro de movimentações",
+      "method": "get",
+      "endpoint": "registroMovimentacao/porIdPacote",
+      "responses": [
+        {
+          "uuid": "59e99d05-47d9-40b4-8fe9-d9f394e724eb",
+          "body": "[{\"id\":1,\"data\":\"8/10/2022\",\"local\":\"Jardim\"},\n{\"id\":2,\"data\":\"6/12/2022\",\"local\":\"Haolaishan\"},\n{\"id\":3,\"data\":\"11/10/2022\",\"local\":\"Independencia\"},\n{\"id\":4,\"data\":\"12/4/2021\",\"local\":\"Khotiv\"},\n{\"id\":5,\"data\":\"3/23/2022\",\"local\":\"Port Erin\"},\n{\"id\":6,\"data\":\"3/3/2022\",\"local\":\"Chaiyo\"},\n{\"id\":7,\"data\":\"5/5/2022\",\"local\":\"Gaotian\"},\n{\"id\":8,\"data\":\"4/11/2022\",\"local\":\"Tabango\"},\n{\"id\":9,\"data\":\"2/7/2022\",\"local\":\"Chimboy Shahri\"},\n{\"id\":10,\"data\":\"12/30/2021\",\"local\":\"Kufa\"}]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "49b41ad8-4d42-42fb-95de-7962747157a1",
+      "documentation": "criar pacote",
+      "method": "post",
+      "endpoint": "pacote",
+      "responses": [
+        {
+          "uuid": "0c9fcdd7-d961-41e7-987a-1060fa4df75d",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "6cfd1a69-5138-4b52-9b48-b027e4193e75",
+      "documentation": "obter usuario",
+      "method": "get",
+      "endpoint": "usuario/:id",
+      "responses": [
+        {
+          "uuid": "b5bd71cd-d814-4d2c-812d-e378d0a41650",
+          "body": "{\n  \"id\": \"us01\",\n  \"usuario\": \"ricargo@email.com\",\n  \"nome\": \"Ricado\",\n  \"sobrenome\": \"Aurélio\",\n  \"cpf\": \"123.456.789-10\",\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5274051d-f9b1-4256-8927-a087643c63df",
+      "documentation": "login de usuario",
+      "method": "get",
+      "endpoint": "usuario/:nome/:senha",
+      "responses": [
+        {
+          "uuid": "482768ee-a5a1-4f37-8fb6-b76298facdd9",
+          "body": "{\n  \"id\": \"us01\",\n  \"usuario\": \"ricargo@email.com\",\n  \"nome\": \"Ricado\",\n  \"sobrenome\": \"Aurélio\",\n  \"cpf\": \"123.456.789-10\",\n  \"configuracao\": {\n    \"atualizacaoAutomatica\": false,\n    \"tipoOrdenacaoPadrao\": 1,\n    \"intervaloAtualizacao\": 1,\n    \"horarioComercialAtualizacao\": false\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1eca9392-38c3-4533-833f-227da3beab9f",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "etiqueta/criarEAssociarPacote",
+      "responses": [
+        {
+          "uuid": "23882f81-764b-452a-a7e4-3d0905457279",
+          "body": "{\"Funcionou\": true}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a3598198-3fa6-436c-b598-e4464ee547bb",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "pacote/adicionarEtiqueta",
+      "responses": [
+        {
+          "uuid": "d8e1f44f-762d-4d5b-81b1-b3bed861b46e",
+          "body": "{\"Adicionado\": true}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9ccaf895-a5fc-4446-9658-7983264b0196",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "etiqueta/getPorIdPacotes",
+      "responses": [
+        {
+          "uuid": "61f473c8-d125-49fc-ab66-52aa0130590a",
+          "body": "[\n  {\"id\": \"tag001\", \"nome\": \"Presente\", \"cor\": \"#00bfff\", \"codigo\": \"\"},\n  {\"id\": \"tag002\", \"nome\": \"Trabalho\", \"cor\": \"#0000ff\", \"codigo\": \"\"},\n  {\"id\": \"tag003\", \"nome\": \"Enfeites de Natal\", \"cor\": \"#8000ff\", \"codigo\": \"\"}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "4a22e003-75de-49e0-bcbd-b6adcedafca2",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "auth/:user/:password",
+      "responses": [
+        {
+          "uuid": "6427ce89-d49e-4687-a16a-564b84e2e977",
+          "body": "{\n  \"token\": \"eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQSflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\",\n  \"usuario\": {\n    \"id\": \"us01\",\n    \"usuario\": \"ricargo@email.com\",\n    \"nome\": \"Ricado\",\n    \"sobrenome\": \"Aurélio\",\n    \"cpf\": \"123.456.789-10\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7b9bbb28-b553-451f-87ee-1edc22c8538a",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "auth/refreshToken",
+      "responses": [
+        {
+          "uuid": "8fe74e67-c232-4f11-85c4-167a699c4835",
+          "body": "{\n  \"token\": \"eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQSflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3c93b58e-182e-4a61-a9c8-969a76bb98c0",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "configuracao/getPorIdUsuario/:id",
+      "responses": [
+        {
+          "uuid": "06fb5409-789b-4e6f-baa8-03740902677d",
+          "body": "{\n    \"atualizacaoAutomatica\": true,\n    \"tipoOrdenacaoPadrao\": 1,\n    \"intervaloAtualizacao\": 1,\n    \"horarioComercialAtualizacao\": false\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

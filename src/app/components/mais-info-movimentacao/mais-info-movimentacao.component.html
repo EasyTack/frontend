@@ -1,0 +1,11 @@
+<h1 mat-dialog-title style="text-align: center;">Detalhes</h1>
+<h4><b>Situação: {{data.status}}</b></h4>
+<div mat-dialog-content>
+    {{data.response}}
+
+    <div class="item" style="    display: flex;
+    justify-content: center;
+    margin-top: 20px;" >
+        <button mat-raised-button (click)="closeDialog()" class="btn-dialog-position-cancel highlight-button-white">Fechar</button>
+    </div>
+</div>

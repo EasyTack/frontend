@@ -1,0 +1,38 @@
+.menu-inicial{
+    width: 80%;
+    padding: 20px;
+    background-color: var(--color-page);
+}
+
+.home-form-busca{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 140px;
+}
+
+.home-form-item{
+    margin-top: 17.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.home-form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-form-button button {
+    width: 110px;
+}
+
+.home-form-button button mat-icon {
+    margin-right: 5px;
+}
+
+.home-registro-movimentacoes {
+    padding: 25px;
+    box-sizing: border-box;
+    overflow: scroll;
+    max-height: 70vh;
+}

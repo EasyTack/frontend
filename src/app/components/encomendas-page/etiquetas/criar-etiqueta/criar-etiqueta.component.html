@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Nova Etiqueta</h1>
+
+<div mat-dialog-content class="content-page">
+    <form [formGroup]="formCriarEtiqueta" class="form-center">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome" type="text" placeholder="AA123456785BR">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Cor</mat-label>
+            <input matInput formControlName="cor" type="color" placeholder="AA123456785BR">
+        </mat-form-field>
+    </form>
+    <div>
+        <button mat-raised-button [mat-dialog-close]="formCriarEtiqueta.value" (click)="criarEtiqueta()" class="btn-dialog-position-ok btn-filter highlight-button-white">Criar</button>
+        <button mat-raised-button mat-dialog-close class="btn-dialog-position-cancel btn-filter highlight-button-white">Cancelar</button>
+    </div>
+</div>

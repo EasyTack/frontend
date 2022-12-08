@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Adicionar Encomenda</h1>
+<div mat-dialog-content class="content-page">
+    
+  <form [formGroup]="formAdicionarEncomenda" class="form-center">
+    <mat-form-field appearance="outline">
+      <mat-label>Trasportadora</mat-label>
+      <mat-select formControlName="idOperadorLogistico">
+        <mat-option *ngFor="let t of trasportadoras$ | async" [value]="t.id">{{t.nome_fantasia}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Código da encomenda</mat-label>
+        <input matInput formControlName="codigoOperadorLogistico" type="text" placeholder="AA123456785BR">
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button mat-dialog-close class="btn-dialog-position-cancel highlight-button-white">Cancelar</button>
+  <button mat-raised-button (click)="salvar()" class="btn-dialog-position-ok highlight-button-white">Adicionar</button>
+</div>

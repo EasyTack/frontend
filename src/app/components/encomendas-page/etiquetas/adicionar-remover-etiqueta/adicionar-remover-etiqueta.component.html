@@ -1,0 +1,18 @@
+<h1 mat-dialog-title *ngIf="adicionar">Adicionar Etiqueta</h1>
+<h1 mat-dialog-title *ngIf="remover">Remover Etiqueta</h1>
+
+<div mat-dialog-content class="content-page">
+    <form [formGroup]="formAdionarEtiqueta" class="form-center">
+        <form-select-etiqueta 
+            [label] = "'Etiqueta'"
+            [custonFormControlName]="'etiqueta'" 
+            [etiquetas$]="etiquetas$">
+        </form-select-etiqueta>
+    </form>
+
+    <div>
+        <button mat-raised-button *ngIf="adicionar" [mat-dialog-close]="formAdionarEtiqueta.value.etiqueta" class="btn-dialog-position-ok btn-filter highlight-button-white">Adicionar</button>
+        <button mat-raised-button *ngIf="remover" [mat-dialog-close]="formAdionarEtiqueta.value.etiqueta" class="btn-dialog-position-ok btn-filter highlight-button-white">remover</button>
+        <button mat-raised-button mat-dialog-close class="btn-dialog-position-cancel btn-filter highlight-button-white">Cancelar</button>
+    </div>
+</div>
